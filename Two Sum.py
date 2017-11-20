@@ -13,7 +13,7 @@ def solution(nums, target):
     for i, v in enumerate(nums):
         result = target - v
         map_value = my_map.get(result, None)
-        if map_value or map_value == 0 :
+        if map_value or map_value == 0:
             return [my_map[result], i]
         else:
             my_map[v] = i
